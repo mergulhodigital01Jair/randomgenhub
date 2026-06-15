@@ -1,0 +1,1062 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RandomGen Hub — Free Online Random Generators</title>
+<meta name="description" content="Free online random generators for names, passwords, usernames, team names, numbers and more. Instant results, no signup required.">
+<meta name="keywords" content="random generator, fantasy name generator, password generator, username generator, team name generator, random number generator">
+<meta property="og:title" content="RandomGen Hub — Free Online Random Generators">
+<meta property="og:description" content="Free online random generators. Fantasy names, passwords, usernames, team names and more. Instant results.">
+<meta property="og:type" content="website">
+<link rel="canonical" href="https://randomgenhub.net/">
+
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+
+<!-- Google AdSense -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2987762508906420" crossorigin="anonymous"></script>
+
+<style>
+:root {
+  --bg: #F7F5F0;
+  --bg2: #EDEAE2;
+  --ink: #1A1714;
+  --ink2: #5C5650;
+  --ink3: #9E9890;
+  --accent: #E84B1A;
+  --accent2: #F5A623;
+  --green: #1A9E6A;
+  --blue: #1A5BE8;
+  --purple: #7C3AED;
+  --border: rgba(26,23,20,0.1);
+  --radius: 16px;
+  --radius-sm: 10px;
+}
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: 'DM Sans', sans-serif;
+  background: var(--bg);
+  color: var(--ink);
+  font-size: 16px;
+  line-height: 1.6;
+}
+h1,h2,h3,h4 { font-family: 'Syne', sans-serif; line-height: 1.2; }
+
+/* NAV */
+nav {
+  position: sticky; top: 0; z-index: 100;
+  background: rgba(247,245,240,0.92);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border);
+  padding: 0 24px;
+}
+.nav-inner {
+  max-width: 1100px; margin: 0 auto;
+  display: flex; align-items: center; justify-content: space-between;
+  height: 60px;
+}
+.logo {
+  font-family: 'Syne', sans-serif;
+  font-weight: 800; font-size: 20px;
+  color: var(--ink); text-decoration: none;
+  display: flex; align-items: center; gap: 8px;
+}
+.logo-dot {
+  width: 10px; height: 10px; border-radius: 50%;
+  background: var(--accent); display: inline-block;
+}
+.nav-links { display: flex; gap: 24px; list-style: none; }
+.nav-links a {
+  text-decoration: none; color: var(--ink2);
+  font-size: 14px; font-weight: 500;
+  transition: color 0.2s;
+}
+.nav-links a:hover { color: var(--accent); }
+
+/* HERO */
+.hero {
+  max-width: 1100px; margin: 0 auto;
+  padding: 80px 24px 60px;
+  display: grid; grid-template-columns: 1fr 1fr;
+  gap: 40px; align-items: center;
+}
+.hero-label {
+  display: inline-block;
+  background: var(--accent); color: #fff;
+  font-size: 11px; font-weight: 600;
+  letter-spacing: 0.1em; text-transform: uppercase;
+  padding: 4px 12px; border-radius: 20px;
+  margin-bottom: 20px;
+}
+.hero h1 {
+  font-size: clamp(36px, 5vw, 58px);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: var(--ink);
+  margin-bottom: 16px;
+}
+.hero h1 span { color: var(--accent); }
+.hero p {
+  font-size: 18px; color: var(--ink2);
+  margin-bottom: 32px; max-width: 420px;
+}
+.hero-stats {
+  display: flex; gap: 32px;
+}
+.hero-stat strong {
+  display: block; font-family: 'Syne', sans-serif;
+  font-size: 28px; font-weight: 800; color: var(--ink);
+}
+.hero-stat span { font-size: 13px; color: var(--ink3); }
+.hero-visual {
+  display: grid; grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+.hero-card {
+  background: #fff; border: 1px solid var(--border);
+  border-radius: var(--radius); padding: 20px;
+  transition: transform 0.2s;
+}
+.hero-card:hover { transform: translateY(-3px); }
+.hero-card-icon {
+  font-size: 28px; margin-bottom: 8px;
+}
+.hero-card h4 {
+  font-size: 14px; font-weight: 600; color: var(--ink);
+}
+.hero-card p { font-size: 12px; color: var(--ink3); }
+
+/* AD SLOT */
+.ad-slot {
+  background: var(--bg2);
+  border: 1px dashed var(--border);
+  border-radius: var(--radius-sm);
+  padding: 20px; text-align: center;
+  color: var(--ink3); font-size: 13px;
+  margin: 0 auto;
+}
+
+/* TOOLS SECTION */
+.tools-section {
+  max-width: 1100px; margin: 0 auto;
+  padding: 20px 24px 80px;
+}
+.tools-section > .section-label {
+  font-size: 12px; font-weight: 600;
+  letter-spacing: 0.1em; text-transform: uppercase;
+  color: var(--accent); margin-bottom: 8px;
+}
+.tools-section > h2 {
+  font-size: clamp(28px, 4vw, 42px);
+  font-weight: 800; margin-bottom: 40px;
+  letter-spacing: -0.02em;
+}
+
+/* TOOL CARD */
+.tool-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(480px, 1fr));
+  gap: 20px;
+  margin-bottom: 40px;
+}
+.tool-card {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  transition: box-shadow 0.2s;
+}
+.tool-card:hover { box-shadow: 0 8px 32px rgba(0,0,0,0.08); }
+.tool-header {
+  padding: 20px 24px 16px;
+  border-bottom: 1px solid var(--border);
+  display: flex; align-items: center; gap: 12px;
+}
+.tool-icon {
+  width: 40px; height: 40px; border-radius: 10px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 20px; flex-shrink: 0;
+}
+.tool-header-text h3 { font-size: 18px; font-weight: 700; }
+.tool-header-text p { font-size: 13px; color: var(--ink2); margin-top: 2px; }
+.tool-body { padding: 20px 24px; }
+.tool-result {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 16px 18px;
+  font-family: 'Syne', sans-serif;
+  font-size: 22px; font-weight: 700;
+  color: var(--ink);
+  min-height: 60px;
+  display: flex; align-items: center;
+  word-break: break-all;
+  margin-bottom: 12px;
+  transition: all 0.3s;
+}
+.tool-result.flash { background: #fff8f5; border-color: var(--accent); }
+.tool-result-list {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 14px 18px;
+  margin-bottom: 12px;
+  min-height: 80px;
+  font-size: 15px; line-height: 2;
+}
+.tool-result-list span {
+  display: inline-block;
+  background: #fff; border: 1px solid var(--border);
+  border-radius: 6px; padding: 2px 10px;
+  margin: 2px; font-weight: 500;
+}
+.tool-controls {
+  display: flex; gap: 8px; flex-wrap: wrap;
+  margin-bottom: 14px; align-items: center;
+}
+.tool-controls label {
+  font-size: 13px; color: var(--ink2); font-weight: 500;
+}
+.tool-controls select, .tool-controls input[type="number"] {
+  background: var(--bg); border: 1px solid var(--border);
+  border-radius: 8px; padding: 6px 10px;
+  font-size: 13px; color: var(--ink);
+  font-family: 'DM Sans', sans-serif;
+}
+.tool-controls input[type="range"] {
+  width: 120px;
+}
+.checkbox-row {
+  display: flex; gap: 12px; flex-wrap: wrap;
+  margin-bottom: 14px;
+}
+.checkbox-row label {
+  display: flex; align-items: center; gap: 6px;
+  font-size: 13px; color: var(--ink2); cursor: pointer;
+}
+.checkbox-row input[type="checkbox"] { accent-color: var(--accent); }
+.btn-generate {
+  background: var(--accent); color: #fff;
+  border: none; border-radius: var(--radius-sm);
+  padding: 12px 24px;
+  font-family: 'Syne', sans-serif;
+  font-size: 15px; font-weight: 700;
+  cursor: pointer; transition: background 0.2s, transform 0.1s;
+  letter-spacing: 0.02em;
+}
+.btn-generate:hover { background: #c73e12; }
+.btn-generate:active { transform: scale(0.97); }
+.btn-copy {
+  background: transparent; color: var(--ink2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 12px 18px;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 14px; font-weight: 500;
+  cursor: pointer; transition: all 0.2s;
+}
+.btn-copy:hover { background: var(--bg2); color: var(--ink); }
+.btn-row { display: flex; gap: 8px; align-items: center; }
+.copied-msg {
+  font-size: 13px; color: var(--green);
+  font-weight: 500; opacity: 0;
+  transition: opacity 0.3s;
+}
+.copied-msg.show { opacity: 1; }
+
+/* STRENGTH BAR */
+.strength-wrap { margin-bottom: 14px; }
+.strength-label { font-size: 12px; color: var(--ink3); margin-bottom: 6px; }
+.strength-bar {
+  height: 6px; background: var(--bg2);
+  border-radius: 3px; overflow: hidden;
+}
+.strength-fill {
+  height: 100%; border-radius: 3px;
+  transition: width 0.4s, background 0.4s;
+}
+
+/* INFO SECTION */
+.info-section {
+  background: var(--bg2);
+  padding: 60px 24px;
+}
+.info-inner {
+  max-width: 800px; margin: 0 auto;
+}
+.info-inner h2 {
+  font-size: 32px; font-weight: 800;
+  margin-bottom: 20px; letter-spacing: -0.02em;
+}
+.info-inner p { color: var(--ink2); margin-bottom: 16px; line-height: 1.8; }
+.info-inner h3 {
+  font-size: 20px; font-weight: 700;
+  margin-top: 32px; margin-bottom: 12px;
+}
+
+/* FOOTER */
+footer {
+  background: var(--ink);
+  color: rgba(255,255,255,0.7);
+  padding: 40px 24px;
+}
+.footer-inner {
+  max-width: 1100px; margin: 0 auto;
+  display: flex; justify-content: space-between;
+  align-items: center; flex-wrap: gap;
+  gap: 20px;
+}
+.footer-logo {
+  font-family: 'Syne', sans-serif; font-weight: 800;
+  font-size: 18px; color: #fff;
+}
+.footer-links { display: flex; gap: 20px; flex-wrap: wrap; }
+.footer-links a {
+  color: rgba(255,255,255,0.6); text-decoration: none;
+  font-size: 14px; transition: color 0.2s;
+}
+.footer-links a:hover { color: #fff; }
+.footer-copy { font-size: 13px; margin-top: 16px; }
+
+/* PAGE OVERLAY (for legal pages) */
+.page-overlay {
+  display: none;
+  position: fixed; inset: 0; z-index: 200;
+  background: var(--bg);
+  overflow-y: auto;
+}
+.page-overlay.active { display: block; }
+.page-overlay-inner {
+  max-width: 800px; margin: 0 auto;
+  padding: 40px 24px;
+}
+.back-btn {
+  display: inline-flex; align-items: center; gap: 8px;
+  background: transparent; border: 1px solid var(--border);
+  border-radius: 8px; padding: 8px 16px;
+  font-size: 14px; font-weight: 500; color: var(--ink2);
+  cursor: pointer; margin-bottom: 32px;
+  font-family: 'DM Sans', sans-serif;
+  transition: all 0.2s;
+}
+.back-btn:hover { background: var(--bg2); color: var(--ink); }
+.legal-content h1 { font-size: 36px; font-weight: 800; margin-bottom: 8px; }
+.legal-content .date { font-size: 14px; color: var(--ink3); margin-bottom: 32px; }
+.legal-content h2 { font-size: 22px; font-weight: 700; margin: 32px 0 12px; }
+.legal-content p, .legal-content li {
+  color: var(--ink2); line-height: 1.8; margin-bottom: 12px;
+}
+.legal-content ul { padding-left: 20px; margin-bottom: 16px; }
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .hero { grid-template-columns: 1fr; }
+  .hero-visual { display: none; }
+  .tool-grid { grid-template-columns: 1fr; }
+  .footer-inner { flex-direction: column; align-items: flex-start; }
+  nav .nav-links { display: none; }
+}
+
+/* ANIMATIONS */
+@keyframes fadeSlideUp {
+  from { opacity: 0; transform: translateY(16px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.tool-card {
+  animation: fadeSlideUp 0.5s ease both;
+}
+.tool-card:nth-child(1) { animation-delay: 0.05s; }
+.tool-card:nth-child(2) { animation-delay: 0.10s; }
+.tool-card:nth-child(3) { animation-delay: 0.15s; }
+.tool-card:nth-child(4) { animation-delay: 0.20s; }
+.tool-card:nth-child(5) { animation-delay: 0.25s; }
+.tool-card:nth-child(6) { animation-delay: 0.30s; }
+</style>
+</head>
+<body>
+
+<!-- NAVIGATION -->
+<nav>
+  <div class="nav-inner">
+    <a href="#" class="logo"><span class="logo-dot"></span> RandomGen Hub</a>
+    <ul class="nav-links">
+      <li><a href="#tools">All Tools</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#" onclick="showPage('privacy')">Privacy</a></li>
+      <li><a href="#" onclick="showPage('terms')">Terms</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-text">
+    <div class="hero-label">100% Free — No Signup</div>
+    <h1>Random <span>Generators</span> for Everything</h1>
+    <p>Instantly generate names, passwords, usernames, team names, numbers, and more. All tools work in your browser.</p>
+    <div class="hero-stats">
+      <div class="hero-stat">
+        <strong>8+</strong>
+        <span>Free tools</span>
+      </div>
+      <div class="hero-stat">
+        <strong>0</strong>
+        <span>Sign-ups needed</span>
+      </div>
+      <div class="hero-stat">
+        <strong>∞</strong>
+        <span>Generations</span>
+      </div>
+    </div>
+  </div>
+  <div class="hero-visual">
+    <div class="hero-card">
+      <div class="hero-card-icon">⚔️</div>
+      <h4>Fantasy Names</h4>
+      <p>Elves, Warriors, Wizards</p>
+    </div>
+    <div class="hero-card">
+      <div class="hero-card-icon">🔐</div>
+      <h4>Passwords</h4>
+      <p>Strong & secure</p>
+    </div>
+    <div class="hero-card">
+      <div class="hero-card-icon">🎮</div>
+      <h4>Usernames</h4>
+      <p>Cool & unique</p>
+    </div>
+    <div class="hero-card">
+      <div class="hero-card-icon">🏆</div>
+      <h4>Team Names</h4>
+      <p>Sports & gaming</p>
+    </div>
+  </div>
+</section>
+
+<!-- AD SLOT TOP -->
+<div style="max-width:1100px; margin: 0 auto 32px; padding: 0 24px;">
+  <div class="ad-slot" style="max-width:728px; margin: 0 auto;">
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-client="ca-pub-2987762508906420"
+         data-ad-slot="auto"
+         data-ad-format="auto"
+         data-full-width-responsive="true"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+</div>
+
+<!-- TOOLS -->
+<section class="tools-section" id="tools">
+  <div class="section-label">Free Online Tools</div>
+  <h2>Pick Your Generator</h2>
+
+  <div class="tool-grid">
+
+    <!-- TOOL 1: FANTASY NAME -->
+    <div class="tool-card" id="tool-fantasy">
+      <div class="tool-header">
+        <div class="tool-icon" style="background:#F0EDFF;">⚔️</div>
+        <div class="tool-header-text">
+          <h3>Fantasy Name Generator</h3>
+          <p>Generate names for RPG characters, Elves, Warriors, Wizards and more</p>
+        </div>
+      </div>
+      <div class="tool-body">
+        <div class="tool-controls">
+          <label>Type:</label>
+          <select id="fantasy-type">
+            <option value="elf">Elf</option>
+            <option value="warrior">Warrior</option>
+            <option value="wizard">Wizard</option>
+            <option value="dwarf">Dwarf</option>
+            <option value="dragon">Dragon</option>
+            <option value="orc">Orc</option>
+          </select>
+          <label>Gender:</label>
+          <select id="fantasy-gender">
+            <option value="any">Any</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+          </select>
+        </div>
+        <div id="fantasy-result" class="tool-result-list"></div>
+        <div class="btn-row">
+          <button class="btn-generate" onclick="generateFantasy()">Generate Names</button>
+          <button class="btn-copy" onclick="copyList('fantasy-result', this)">Copy All</button>
+          <span class="copied-msg" id="fantasy-copied">Copied!</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- TOOL 2: PASSWORD -->
+    <div class="tool-card" id="tool-password">
+      <div class="tool-header">
+        <div class="tool-icon" style="background:#FFF0ED;">🔐</div>
+        <div class="tool-header-text">
+          <h3>Password Generator</h3>
+          <p>Create strong, secure passwords instantly</p>
+        </div>
+      </div>
+      <div class="tool-body">
+        <div class="tool-controls">
+          <label>Length: <strong id="pw-len-val">16</strong></label>
+          <input type="range" id="pw-length" min="8" max="32" value="16" oninput="document.getElementById('pw-len-val').textContent=this.value;generatePassword()">
+        </div>
+        <div class="checkbox-row">
+          <label><input type="checkbox" id="pw-upper" checked> Uppercase</label>
+          <label><input type="checkbox" id="pw-lower" checked> Lowercase</label>
+          <label><input type="checkbox" id="pw-numbers" checked> Numbers</label>
+          <label><input type="checkbox" id="pw-symbols" checked> Symbols</label>
+        </div>
+        <div id="password-result" class="tool-result"></div>
+        <div class="strength-wrap">
+          <div class="strength-label" id="strength-label">Strength: Strong</div>
+          <div class="strength-bar"><div class="strength-fill" id="strength-fill" style="width:80%; background:#1A9E6A;"></div></div>
+        </div>
+        <div class="btn-row">
+          <button class="btn-generate" onclick="generatePassword()">Generate</button>
+          <button class="btn-copy" onclick="copyText('password-result', this)">Copy</button>
+          <span class="copied-msg" id="password-copied">Copied!</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- TOOL 3: USERNAME -->
+    <div class="tool-card" id="tool-username">
+      <div class="tool-header">
+        <div class="tool-icon" style="background:#EDF7FF;">🎮</div>
+        <div class="tool-header-text">
+          <h3>Username Generator</h3>
+          <p>Cool, unique usernames for gaming, social media and apps</p>
+        </div>
+      </div>
+      <div class="tool-body">
+        <div class="tool-controls">
+          <label>Style:</label>
+          <select id="username-style">
+            <option value="gaming">Gaming</option>
+            <option value="cool">Cool</option>
+            <option value="funny">Funny</option>
+            <option value="dark">Dark/Edgy</option>
+            <option value="cute">Cute</option>
+          </select>
+          <label>Add numbers:</label>
+          <select id="username-numbers">
+            <option value="no">No</option>
+            <option value="yes">Yes</option>
+          </select>
+        </div>
+        <div id="username-result" class="tool-result-list"></div>
+        <div class="btn-row">
+          <button class="btn-generate" onclick="generateUsername()">Generate</button>
+          <button class="btn-copy" onclick="copyList('username-result', this)">Copy All</button>
+          <span class="copied-msg" id="username-copied">Copied!</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- TOOL 4: TEAM NAME -->
+    <div class="tool-card" id="tool-team">
+      <div class="tool-header">
+        <div class="tool-icon" style="background:#EDFFF5;">🏆</div>
+        <div class="tool-header-text">
+          <h3>Team Name Generator</h3>
+          <p>Epic names for sports teams, gaming squads and work groups</p>
+        </div>
+      </div>
+      <div class="tool-body">
+        <div class="tool-controls">
+          <label>Category:</label>
+          <select id="team-category">
+            <option value="sports">Sports</option>
+            <option value="gaming">Gaming / Esports</option>
+            <option value="work">Work / Business</option>
+            <option value="trivia">Trivia / Quiz</option>
+            <option value="funny">Funny</option>
+          </select>
+        </div>
+        <div id="team-result" class="tool-result-list"></div>
+        <div class="btn-row">
+          <button class="btn-generate" onclick="generateTeam()">Generate</button>
+          <button class="btn-copy" onclick="copyList('team-result', this)">Copy All</button>
+          <span class="copied-msg" id="team-copied">Copied!</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- TOOL 5: RANDOM NUMBER -->
+    <div class="tool-card" id="tool-number">
+      <div class="tool-header">
+        <div class="tool-icon" style="background:#FFF8ED;">🎲</div>
+        <div class="tool-header-text">
+          <h3>Random Number Generator</h3>
+          <p>Generate one or multiple random numbers in any range</p>
+        </div>
+      </div>
+      <div class="tool-body">
+        <div class="tool-controls">
+          <label>From:</label>
+          <input type="number" id="num-min" value="1" style="width:80px;">
+          <label>To:</label>
+          <input type="number" id="num-max" value="100" style="width:80px;">
+          <label>Count:</label>
+          <input type="number" id="num-count" value="1" min="1" max="20" style="width:60px;">
+        </div>
+        <div id="number-result" class="tool-result" style="font-size:36px; justify-content:center; letter-spacing:4px;"></div>
+        <div class="btn-row">
+          <button class="btn-generate" onclick="generateNumber()">Generate</button>
+          <button class="btn-copy" onclick="copyText('number-result', this)">Copy</button>
+          <span class="copied-msg" id="number-copied">Copied!</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- TOOL 6: DRAGON NAME -->
+    <div class="tool-card" id="tool-dragon">
+      <div class="tool-header">
+        <div class="tool-icon" style="background:#FFF0F0;">🐉</div>
+        <div class="tool-header-text">
+          <h3>Dragon Name Generator</h3>
+          <p>Powerful dragon names for D&D, writing, and fantasy worlds</p>
+        </div>
+      </div>
+      <div class="tool-body">
+        <div class="tool-controls">
+          <label>Alignment:</label>
+          <select id="dragon-align">
+            <option value="any">Any</option>
+            <option value="fire">Fire Dragon</option>
+            <option value="ice">Ice Dragon</option>
+            <option value="shadow">Shadow Dragon</option>
+            <option value="storm">Storm Dragon</option>
+          </select>
+        </div>
+        <div id="dragon-result" class="tool-result-list"></div>
+        <div class="btn-row">
+          <button class="btn-generate" onclick="generateDragon()">Generate</button>
+          <button class="btn-copy" onclick="copyList('dragon-result', this)">Copy All</button>
+          <span class="copied-msg" id="dragon-copied">Copied!</span>
+        </div>
+      </div>
+    </div>
+
+  </div><!-- end tool-grid -->
+
+  <!-- AD SLOT MID -->
+  <div class="ad-slot" style="max-width:728px; margin: 20px auto 40px;">
+    <ins class="adsbygoogle"
+         style="display:block"
+         data-ad-client="ca-pub-2987762508906420"
+         data-ad-slot="auto"
+         data-ad-format="auto"
+         data-full-width-responsive="true"></ins>
+    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+  </div>
+
+  <!-- TOOL 7: TEAM PICKER (full width) -->
+  <div class="tool-card" style="margin-bottom: 20px;">
+    <div class="tool-header">
+      <div class="tool-icon" style="background:#F5F0FF;">🎯</div>
+      <div class="tool-header-text">
+        <h3>Random Name Picker / Team Splitter</h3>
+        <p>Enter a list of names, pick a random winner or split into teams</p>
+      </div>
+    </div>
+    <div class="tool-body">
+      <div style="display:grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+        <div>
+          <label style="font-size:13px; color:var(--ink2); font-weight:500; display:block; margin-bottom:8px;">Enter names (one per line):</label>
+          <textarea id="picker-names" rows="6" style="width:100%; background:var(--bg); border:1px solid var(--border); border-radius:10px; padding:12px; font-family:'DM Sans',sans-serif; font-size:14px; color:var(--ink); resize:vertical;" placeholder="Alice&#10;Bob&#10;Charlie&#10;Diana&#10;Eve"></textarea>
+        </div>
+        <div>
+          <div style="margin-bottom:12px;">
+            <div style="font-size:13px; color:var(--ink2); font-weight:500; margin-bottom:8px;">Pick random winner:</div>
+            <div id="picker-result" class="tool-result" style="font-size:26px; min-height:50px; justify-content:center; text-align:center;">—</div>
+          </div>
+          <div style="margin-top:12px;">
+            <div style="font-size:13px; color:var(--ink2); font-weight:500; margin-bottom:8px;">Split into teams:</div>
+            <div class="tool-controls" style="margin-bottom:8px;">
+              <label>Teams:</label>
+              <input type="number" id="team-count" value="2" min="2" max="10" style="width:60px;">
+            </div>
+            <div id="teams-result" style="font-size:13px; color:var(--ink2);"></div>
+          </div>
+        </div>
+      </div>
+      <div class="btn-row" style="margin-top:16px;">
+        <button class="btn-generate" onclick="pickRandom()">Pick Random Winner</button>
+        <button class="btn-copy" style="background:var(--blue); color:#fff; border-color:var(--blue);" onclick="splitTeams()">Split into Teams</button>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<!-- INFO / ABOUT / SEO SECTION -->
+<section class="info-section" id="about">
+  <div class="info-inner">
+    <h2>About RandomGen Hub</h2>
+    <p>RandomGen Hub is a free collection of online random generators designed to save you time. Whether you're looking for a fantasy name for your RPG character, a secure password for a new account, or a fun team name for your next game night — we've got you covered.</p>
+    <p>All generators run entirely in your browser. We don't store any of your inputs or generated results. No account, no email, no tracking.</p>
+
+    <h3>Fantasy Name Generator</h3>
+    <p>Our fantasy name generator creates authentic-sounding names for elves, warriors, wizards, dwarves, dragons, and orcs. Perfect for D&D campaigns, tabletop RPGs, fantasy writing, video games, and any creative project that needs a memorable character name.</p>
+
+    <h3>Password Generator</h3>
+    <p>Creating a strong password is one of the most important things you can do to protect your online accounts. Our password generator lets you customize length, character types, and complexity to match any website's requirements. Generated passwords never leave your browser.</p>
+
+    <h3>Username Generator</h3>
+    <p>Finding a username that's both unique and available can be frustrating. Our username generator offers five styles — gaming, cool, funny, dark/edgy, and cute — so you can find something that matches your personality for any platform.</p>
+
+    <h3>Team Name Generator</h3>
+    <p>From sports leagues to office trivia nights to esports tournaments, a great team name sets the tone. Our team name generator covers sports, gaming, workplace, quiz, and funny categories with hundreds of creative combinations.</p>
+
+    <h3>Random Number Generator</h3>
+    <p>Need a truly random number? Whether it's for a lottery, a game, statistical sampling, or a classroom activity, our random number generator gives you instant results between any range you define.</p>
+
+    <h3>Dragon Name Generator</h3>
+    <p>Dragons deserve powerful names. Our dragon name generator creates epic, unique names inspired by fire, ice, shadow, and storm — perfect for Dungeons & Dragons, fantasy novels, or any world-building project.</p>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div>
+      <div class="footer-logo">RandomGen Hub</div>
+      <div class="footer-copy">© 2026 RandomGen Hub. All rights reserved.</div>
+    </div>
+    <div class="footer-links">
+      <a href="#" onclick="showPage('about-page')">About</a>
+      <a href="#" onclick="showPage('privacy')">Privacy Policy</a>
+      <a href="#" onclick="showPage('terms')">Terms of Use</a>
+      <a href="mailto:contact@randomgenhub.net">Contact</a>
+    </div>
+  </div>
+</footer>
+
+<!-- PRIVACY POLICY PAGE -->
+<div class="page-overlay" id="privacy">
+  <div class="page-overlay-inner">
+    <button class="back-btn" onclick="hidePage('privacy')">← Back to Home</button>
+    <div class="legal-content">
+      <h1>Privacy Policy</h1>
+      <div class="date">Last updated: January 1, 2025</div>
+      <p>RandomGen Hub ("we", "us", or "our") operates the website randomgenhub.net. This page informs you of our policies regarding the collection, use, and disclosure of personal data when you use our Service.</p>
+      <h2>Information We Collect</h2>
+      <p>RandomGen Hub does not collect personally identifiable information. All generators run entirely in your browser. We do not store any names, passwords, or other content you generate using our tools.</p>
+      <p>We may collect non-personally identifiable information such as browser type, language, and anonymous usage statistics through Google Analytics to help improve the service.</p>
+      <h2>Cookies</h2>
+      <p>We use cookies only for analytics purposes (Google Analytics) and to display relevant advertisements through Google AdSense. You can disable cookies in your browser settings at any time.</p>
+      <h2>Google AdSense</h2>
+      <p>We use Google AdSense to display advertisements on this site. Google may use cookies to serve ads based on your prior visits to this website or other websites. You may opt out of personalized advertising by visiting <a href="https://www.google.com/settings/ads" style="color:var(--accent);">Google's Ads Settings</a>.</p>
+      <h2>Third-Party Services</h2>
+      <p>Our website may contain links to third-party websites. We have no control over, and assume no responsibility for, the content, privacy policies, or practices of any third-party sites or services.</p>
+      <h2>Children's Privacy</h2>
+      <p>Our service does not address anyone under the age of 13. We do not knowingly collect personally identifiable information from children under 13.</p>
+      <h2>Changes to This Policy</h2>
+      <p>We may update our Privacy Policy from time to time. Changes become effective when posted on this page.</p>
+      <h2>Contact Us</h2>
+      <p>If you have any questions about this Privacy Policy, please contact us at: contact@randomgenhub.net</p>
+    </div>
+  </div>
+</div>
+
+<!-- TERMS OF USE PAGE -->
+<div class="page-overlay" id="terms">
+  <div class="page-overlay-inner">
+    <button class="back-btn" onclick="hidePage('terms')">← Back to Home</button>
+    <div class="legal-content">
+      <h1>Terms of Use</h1>
+      <div class="date">Last updated: January 1, 2025</div>
+      <p>By accessing and using RandomGen Hub ("the Service"), you accept and agree to be bound by these Terms of Use. If you do not agree to these terms, please do not use our service.</p>
+      <h2>Use of the Service</h2>
+      <p>RandomGen Hub provides free online random generation tools for personal and commercial use. You may use the generated content (names, passwords, numbers, etc.) for any lawful purpose without restriction or attribution.</p>
+      <ul>
+        <li>You agree not to misuse the service or help anyone else do so.</li>
+        <li>You agree not to attempt to interfere with the proper working of the service.</li>
+        <li>You agree not to use automated tools to make excessive requests to our servers.</li>
+      </ul>
+      <h2>Disclaimer of Warranties</h2>
+      <p>The service is provided on an "as is" and "as available" basis without any warranties of any kind, either express or implied. We do not warrant that the service will be uninterrupted, error-free, or completely secure.</p>
+      <h2>Password Security Notice</h2>
+      <p>While our password generator creates strong passwords, we strongly recommend using a reputable password manager to store your passwords. We are not responsible for any security breach resulting from the use of generated passwords.</p>
+      <h2>Limitation of Liability</h2>
+      <p>RandomGen Hub shall not be liable for any indirect, incidental, special, consequential or punitive damages resulting from your use of, or inability to use, the service.</p>
+      <h2>Intellectual Property</h2>
+      <p>The RandomGen Hub website design, logo, and code are owned by RandomGen Hub. The content generated by our tools (names, passwords, etc.) is not copyrighted and may be used freely.</p>
+      <h2>Changes to Terms</h2>
+      <p>We reserve the right to modify these terms at any time. Continued use of the service after changes constitutes acceptance of the new terms.</p>
+      <h2>Contact</h2>
+      <p>For questions about these Terms of Use, contact us at: contact@randomgenhub.net</p>
+    </div>
+  </div>
+</div>
+
+<!-- ABOUT PAGE -->
+<div class="page-overlay" id="about-page">
+  <div class="page-overlay-inner">
+    <button class="back-btn" onclick="hidePage('about-page')">← Back to Home</button>
+    <div class="legal-content">
+      <h1>About RandomGen Hub</h1>
+      <div class="date">Free random generators since 2025</div>
+      <p>RandomGen Hub is a free, ad-supported collection of online random generators built for writers, gamers, developers, teachers, and anyone who needs instant random results — no sign-up, no download, no payment required.</p>
+      <p>We believe useful tools should be accessible to everyone. That's why every generator on this site works instantly in your browser, with zero friction.</p>
+
+      <h2>Our Tools</h2>
+      <p>We currently offer 8 free random generators, each designed with a specific use case in mind:</p>
+      <ul>
+        <li><strong>Fantasy Name Generator</strong> — Create authentic-sounding names for elves, warriors, wizards, dwarves, dragons, and orcs. Perfect for tabletop RPGs, fantasy writing, and video games.</li>
+        <li><strong>Password Generator</strong> — Generate strong, secure passwords with full control over length, character types, and complexity. Includes a real-time strength meter.</li>
+        <li><strong>Username Generator</strong> — Find unique usernames for gaming platforms, social media, forums, and apps. Choose from gaming, cool, funny, dark, or cute styles.</li>
+        <li><strong>Team Name Generator</strong> — Get creative team names for sports, esports, workplace groups, and trivia nights. Hundreds of curated options across multiple categories.</li>
+        <li><strong>Random Number Generator</strong> — Generate one or multiple random numbers within any range. Great for games, decisions, raffles, and statistical sampling.</li>
+        <li><strong>Dragon Name Generator</strong> — Powerful, evocative dragon names sorted by element: fire, ice, shadow, and storm. Ideal for D&D, fantasy novels, and world-building.</li>
+        <li><strong>Random Name Picker</strong> — Paste any list of names and pick a random winner instantly. Great for classroom activities, giveaways, and fair decision-making.</li>
+        <li><strong>Team Splitter</strong> — Divide a group of names into balanced teams randomly and fairly. Perfect for games, gym class, or group projects.</li>
+      </ul>
+
+      <h2>How It Works</h2>
+      <p>Every generator on RandomGen Hub runs entirely in your browser using JavaScript. Nothing you type or generate is ever sent to our servers. Your data stays on your device at all times — we value your privacy.</p>
+      <p>Our generators use curated word lists and algorithmic combinations to produce results that feel authentic and useful, not just random noise. Each tool was built with a specific community in mind: writers, gamers, students, teachers, and professionals.</p>
+
+      <h2>Who Uses RandomGen Hub</h2>
+      <p>Our tools are used by a wide range of people every day:</p>
+      <ul>
+        <li><strong>Writers and worldbuilders</strong> who need character names for novels, screenplays, or tabletop campaigns</li>
+        <li><strong>Gamers</strong> looking for unique usernames or RPG character names</li>
+        <li><strong>Teachers and facilitators</strong> who need fair team splitting and random selection tools</li>
+        <li><strong>IT professionals and developers</strong> who need quick, strong passwords for testing</li>
+        <li><strong>Anyone</strong> who needs a random number for a decision, raffle, or game</li>
+      </ul>
+
+      <h2>How We Make Money</h2>
+      <p>RandomGen Hub is completely free to use and supported by display advertising through Google AdSense. The ads you see on this site help us keep the service running, cover hosting costs, and continue building new tools. We appreciate your support.</p>
+
+      <h2>Contact</h2>
+      <p>Have a suggestion for a new generator? Found a bug or have feedback? We'd love to hear from you: <a href="mailto:contact@randomgenhub.net" style="color:var(--accent);">contact@randomgenhub.net</a></p>
+    </div>
+  </div>
+</div>
+
+<script>
+// ===== DATA =====
+const D = {
+  fantasy: {
+    elf: { m: ['Aelindra','Caladwen','Elladan','Galadhon','Ithilwen','Legolin','Nimrodel','Orophin','Rúmil','Silvan','Thandraniel','Vanyamir','Celeborn','Elrohir','Findaráto','Glorfindel','Haldir','Ithrondir','Lúthien','Maeglin'], f: ['Arwen','Celebrían','Elwing','Galadriel','Idril','Lúthien','Melian','Nerdanel','Nimloth','Tinúviel','Varda','Yavanna','Altariel','Elenwë','Finduilas','Ivorwen','Lalaith','Míriel','Nienor','Rían'] },
+    warrior: { m: ['Aldric','Baldur','Cormac','Dagmar','Edric','Fjord','Gunnar','Harald','Igor','Jarek','Kalan','Lothar','Magnus','Nero','Osric','Ragnar','Strom','Thane','Ulric','Volkmar'], f: ['Astrid','Brynhildr','Celeste','Dagny','Eira','Freya','Gudrun','Hilde','Ingrid','Jora','Katla','Lagertha','Mira','Nora','Petra','Ragnhild','Sigrid','Thyra','Ulfhild','Valka'] },
+    wizard: { m: ['Aldaron','Beleram','Caerwyn','Dalamar','Elistan','Fistandantilus','Gandulf','Hecatomb','Isidore','Jarvis','Khelben','Lorovan','Merlin','Niall','Oswald','Pharaun','Quellar','Raistlin','Saruman','Tenser'], f: ['Alustriel','Blanche','Cixi','Dalindra','Elminster','Faeranduil','Griselda','Halaster','Irori','Jalessa','Kira','Liadon','Myriel','Nerezza','Odalys','Phandar','Quinta','Rowena','Sylvara','Thalindra'] },
+    dwarf: { m: ['Balin','Bifur','Bofur','Bombur','Borin','Dain','Dori','Dwalin','Farin','Fili','Floi','Fundin','Gimli','Gloin','Loni','Nain','Nori','Oin','Ori','Thorin'], f: ['Disa','Ferra','Gunna','Helga','Hilda','Kruna','Marda','Nerna','Sigda','Torna','Ulka','Varda','Werna','Yrsa','Zorna','Brena','Durna','Elda','Falda','Golda'] },
+    dragon: { m: ['Abraxas','Bahamut','Cyndriarx','Draconix','Emberwing','Frostfang','Ghalzarath','Helixir','Infernus','Jhaamdath','Kalameet','Lotharaxas','Malygos','Nafarion','Obsidrix','Pyraxis','Quellthar','Rathaxas','Smaug','Tiamat'], f: ['Adalindra','Brindlewing','Crystalina','Draconess','Emberveil','Flarefang','Glimmerwing','Hydra','Iceveil','Jadewing','Kalinda','Lavawing','Mystravel','Nixwing','Opalscale','Pyralina','Quetzara','Rubywing','Sapphira','Tempestrix'] },
+    orc: { m: ['Azgal','Bolg','Crugash','Drothgar','Ergash','Fulgrim','Gothak','Hrugnar','Ikthak','Jorgrak','Kargath','Lurtz','Morogoth','Nagrash','Orgrim','Porgash','Raksha','Skullcrusher','Thraka','Urgash'], f: ['Azura','Bolgra','Crasha','Dorgath','Evkash','Ferasha','Gorgtha','Hrutha','Iksha','Jokhra','Kasha','Lursha','Mogra','Nasha','Orsha','Praka','Raksha','Skasha','Thraka','Urgasha'] }
+  },
+  username: {
+    gaming: ['Shadow','Viper','Ghost','Blaze','Storm','Phantom','Nexus','Titan','Omega','Apex','Rogue','Cipher','Specter','Nova','Wraith','Onyx','Surge','Echo','Valor','Havoc'],
+    cool: ['Frost','Azure','Neon','Void','Crypt','Flux','Zeal','Drift','Glitch','Orion','Lyric','Pixel','Quantum','Sync','Vex','Wolf','Xero','Zenith','Arc','Bolt'],
+    funny: ['PizzaLord','SnaccAttack','ToastMaster','WaffleHero','BagelBoss','NoodleArm','TacoKnight','BurritoGod','CheeseBorg','CerealKiller','CoconutHead','DerpMaster','FrankBeans','GrumpyCat','HammerTime','IceCreamDude','JellyFish','KaratePotato','LobsterBoy','Muffinator'],
+    dark: ['Abyss','Dusk','Nocturne','Raven','Shade','Umbra','Void','Wrath','Xander','Zephyr','Ashes','Blight','Curse','Dread','Elegy','Famine','Grimoire','Haunt','Inferno','Jinx'],
+    cute: ['Bubbles','Cupcake','Daisy','Ellie','Fluffy','Glimmer','Honey','Iris','Jellybean','Kiwi','Lemon','Mochi','Noodle','Oreo','Peach','Quinoa','Rosie','Snuggles','Toffee','Vanilla']
+  },
+  team: {
+    sports: ['Iron Eagles','Thunder Wolves','Steel Falcons','Rapid Vipers','Dark Knights','Blaze Warriors','Neon Panthers','Fury Titans','Arctic Bears','Phantom Riders','Venom Sharks','Wild Stallions','Gold Rush','Night Owls','Rising Storm','Crimson Tide','Black Hawks','Desert Foxes','Blue Thunder','Silver Bullets'],
+    gaming: ['Team Nexus','Pixel Warriors','Digital Wolves','Code Breakers','Neon Squad','Binary Beasts','Glitch Gang','Lag Lords','Respawn Kings','Error 404','Noob Slayers','GG Machine','Last Hit','Full Send','Team Chaos','Tilted Towers','Rush B','AFK Squad','One Shot','Team Yeet'],
+    work: ['Think Tank','Project Phoenix','The Innovators','Blue Sky Team','Synergy Force','Brain Trust','The Disruptors','Dream Team','Power Players','The A-Team','Mission Control','Growth Squad','Alpha Team','The Catalysts','Momentum','Impact Crew','The Visionaries','Dynamic Duo Plus','Culture Club','The Builders'],
+    trivia: ['The Know-It-Alls','Quiz Wizards','Smarty Pints','Brain Cells','The Thinkers','Knowledge Bombers','Fact Finders','Team Smartass','The Scholars','No Googling','Trivia Champs','Random Facts','The Historians','Pub Crawlers','Beer and Brains','Wi-Fi Password','404 Brain Not Found','Ctrl+Alt+Defeat','The Last Neurons','Quiz Khalifa'],
+    funny: ['Error 404: Team Not Found','May The Forks Be With You','We Thought This Was Speed Dating','The Usual Suspects','We Showed Up','Almost Champions','Not Last Place','Ctrl+Alt+Defeat','Mediocre at Best','We Google Everything','Sorry We\'re Late','Participation Trophy','Who Are We Again','Technically Legal','Mostly Harmless']
+  },
+  dragon: {
+    fire: ['Pyroclaw','Emberfang','Infernoscale','Blazewing','Scorchwing','Cinderhorn','Flamecoil','Ashenbane','Magmafist','Ignivore','Pyroveil','Charscale','Volcanis','Infernus Rex','Drakefyre','Blazemaster','Emberlord','Fireborn','Pyraxis','Scorchmantle'],
+    ice: ['Frostscale','Glacierfang','Blizzardwing','Icebane','Crystalhorn','Arcticsoul','Frostveil','Snowmantle','Glacialmaw','Iceclaw','Frostborn','Shiverscale','Absolutezero','Crystaline','Glaciorix','Frostlord','Icethorn','Blizzardhide','Wintertide','Coldsnap'],
+    shadow: ['Voidscale','Darkfang','Shadowwing','Nightbane','Darkhorn','Nightsoul','Shadowveil','Duskmantle','Voidmaw','Shadowclaw','Nightborn','Darkscale','Eclipse','Umbrarix','Shadowlord','Voidthorn','Tenebrix','Dawnbane','Noctus','Darkclaw'],
+    storm: ['Stormwing','Thunderscale','Tempestfang','Lightningbane','Stormhorn','Galeforce','Stormsoul','Thunderveil','Tempestmantle','Cycloneclaw','Stormborn','Thunderscale','Hurricane','Tempestrix','Stormlord','Lightningstrike','Thundermaw','Galewing','Voltscale','Stormbite'],
+    any: ['Ancalagon','Bahamut','Chrysophylax','Dracoclave','Ebon','Faranox','Graugoth','Hazarak','Ixlarat','Jalaxithar','Kalamax','Lordraxis','Malachar','Naelurith','Ominadrex','Pharaxus','Queldrax','Raevix','Sauraxian','Tyraxus']
+  }
+};
+
+// ===== GENERATORS =====
+function rand(arr) { return arr[Math.floor(Math.random() * arr.length)]; }
+function randInt(min, max) { return Math.floor(Math.random() * (max - min + 1)) + min; }
+
+function generateFantasy() {
+  const type = document.getElementById('fantasy-type').value;
+  const gender = document.getElementById('fantasy-gender').value;
+  const pool = D.fantasy[type];
+  let names = [];
+  for (let i = 0; i < 6; i++) {
+    let name;
+    if (gender === 'male') name = rand(pool.m);
+    else if (gender === 'female') name = rand(pool.f);
+    else name = rand(Math.random() > 0.5 ? pool.m : pool.f);
+    if (!names.includes(name)) names.push(name);
+  }
+  const el = document.getElementById('fantasy-result');
+  el.innerHTML = names.map(n => `<span>${n}</span>`).join('');
+  flashResult(el);
+}
+
+function generatePassword() {
+  const len = parseInt(document.getElementById('pw-length').value);
+  const upper = document.getElementById('pw-upper').checked;
+  const lower = document.getElementById('pw-lower').checked;
+  const nums = document.getElementById('pw-numbers').checked;
+  const syms = document.getElementById('pw-symbols').checked;
+  let chars = '';
+  if (upper) chars += 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+  if (lower) chars += 'abcdefghijklmnopqrstuvwxyz';
+  if (nums) chars += '0123456789';
+  if (syms) chars += '!@#$%^&*()_+-=[]{}|;:,.<>?';
+  if (!chars) chars = 'abcdefghijklmnopqrstuvwxyz';
+  let pw = '';
+  for (let i = 0; i < len; i++) pw += chars[Math.floor(Math.random() * chars.length)];
+  document.getElementById('password-result').textContent = pw;
+  updateStrength(len, upper, lower, nums, syms);
+  flashResult(document.getElementById('password-result'));
+}
+
+function updateStrength(len, upper, lower, nums, syms) {
+  const types = [upper, lower, nums, syms].filter(Boolean).length;
+  let score = 0;
+  if (len >= 8) score++;
+  if (len >= 12) score++;
+  if (len >= 16) score++;
+  if (types >= 2) score++;
+  if (types >= 3) score++;
+  if (types >= 4) score++;
+  const labels = ['Very Weak','Weak','Fair','Good','Strong','Very Strong'];
+  const colors = ['#E24B4A','#E24B4A','#EF9F27','#EF9F27','#1A9E6A','#1A9E6A'];
+  const pcts = [10,20,40,60,80,100];
+  document.getElementById('strength-label').textContent = 'Strength: ' + labels[score];
+  document.getElementById('strength-fill').style.width = pcts[score] + '%';
+  document.getElementById('strength-fill').style.background = colors[score];
+}
+
+function generateUsername() {
+  const style = document.getElementById('username-style').value;
+  const addNums = document.getElementById('username-numbers').value === 'yes';
+  const pool = D.username[style];
+  let names = [];
+  for (let i = 0; i < 6; i++) {
+    let u = rand(pool);
+    if (addNums) u += randInt(1, 999);
+    if (!names.includes(u)) names.push(u);
+  }
+  const el = document.getElementById('username-result');
+  el.innerHTML = names.map(n => `<span>${n}</span>`).join('');
+  flashResult(el);
+}
+
+function generateTeam() {
+  const cat = document.getElementById('team-category').value;
+  const pool = D.team[cat];
+  let teams = [];
+  for (let i = 0; i < 6; i++) {
+    let t = rand(pool);
+    if (!teams.includes(t)) teams.push(t);
+  }
+  const el = document.getElementById('team-result');
+  el.innerHTML = teams.map(n => `<span>${n}</span>`).join('');
+  flashResult(el);
+}
+
+function generateNumber() {
+  const min = parseInt(document.getElementById('num-min').value) || 1;
+  const max = parseInt(document.getElementById('num-max').value) || 100;
+  const count = Math.min(parseInt(document.getElementById('num-count').value) || 1, 20);
+  if (min > max) { alert('Min must be less than max'); return; }
+  let nums = [];
+  for (let i = 0; i < count; i++) nums.push(randInt(min, max));
+  const el = document.getElementById('number-result');
+  el.textContent = nums.join('  ');
+  el.style.fontSize = count > 5 ? '22px' : '36px';
+  flashResult(el);
+}
+
+function generateDragon() {
+  const align = document.getElementById('dragon-align').value;
+  const pool = D.dragon[align];
+  let names = [];
+  for (let i = 0; i < 6; i++) {
+    let n = rand(pool);
+    if (!names.includes(n)) names.push(n);
+  }
+  const el = document.getElementById('dragon-result');
+  el.innerHTML = names.map(n => `<span>${n}</span>`).join('');
+  flashResult(el);
+}
+
+function pickRandom() {
+  const raw = document.getElementById('picker-names').value.trim();
+  if (!raw) return;
+  const names = raw.split('\n').map(n => n.trim()).filter(Boolean);
+  if (names.length < 2) { alert('Enter at least 2 names'); return; }
+  const winner = rand(names);
+  const el = document.getElementById('picker-result');
+  el.textContent = winner;
+  flashResult(el);
+}
+
+function splitTeams() {
+  const raw = document.getElementById('picker-names').value.trim();
+  if (!raw) return;
+  let names = raw.split('\n').map(n => n.trim()).filter(Boolean);
+  const teamCount = parseInt(document.getElementById('team-count').value) || 2;
+  if (names.length < teamCount) { alert('Add more names than teams'); return; }
+  // Shuffle
+  for (let i = names.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [names[i], names[j]] = [names[j], names[i]];
+  }
+  let teams = Array.from({ length: teamCount }, () => []);
+  names.forEach((n, i) => teams[i % teamCount].push(n));
+  const el = document.getElementById('teams-result');
+  el.innerHTML = teams.map((t, i) => `<div style="margin-bottom:8px;"><strong style="font-size:13px;">Team ${i+1}:</strong> ${t.join(', ')}</div>`).join('');
+}
+
+// ===== COPY =====
+function copyText(id, btn) {
+  const text = document.getElementById(id).textContent;
+  navigator.clipboard.writeText(text).then(() => showCopied(id, btn));
+}
+function copyList(id, btn) {
+  const spans = document.getElementById(id).querySelectorAll('span');
+  const text = Array.from(spans).map(s => s.textContent).join('\n');
+  navigator.clipboard.writeText(text).then(() => showCopied(id, btn));
+}
+function showCopied(id, btn) {
+  const msgId = id.replace('-result','') + '-copied';
+  const msg = document.getElementById(msgId);
+  if (msg) { msg.classList.add('show'); setTimeout(() => msg.classList.remove('show'), 2000); }
+}
+
+// ===== FLASH ANIMATION =====
+function flashResult(el) {
+  el.classList.add('flash');
+  setTimeout(() => el.classList.remove('flash'), 600);
+}
+
+// ===== PAGE NAVIGATION =====
+function showPage(id) {
+  document.getElementById(id).classList.add('active');
+  window.scrollTo(0, 0);
+}
+function hidePage(id) {
+  document.getElementById(id).classList.remove('active');
+}
+
+// ===== INIT =====
+window.addEventListener('load', () => {
+  generateFantasy();
+  generatePassword();
+  generateUsername();
+  generateTeam();
+  generateNumber();
+  generateDragon();
+});
+</script>
+</body>
+</html>
